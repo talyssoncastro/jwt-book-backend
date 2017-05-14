@@ -1,0 +1,21 @@
+---
+spring:
+  application:
+    name: jwt-book-backend
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt-book
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+  mvc:
+    dispatch-options-request: true
+server:
+  port: 8020
+  
+  
+  
