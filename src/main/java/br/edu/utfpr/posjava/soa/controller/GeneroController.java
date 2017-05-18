@@ -34,6 +34,12 @@ public class GeneroController {
         generoRepository.save(genero);
     }
 
+    @PutMapping("/")
+    @ResponseStatus(value = HttpStatus.OK)
+    public void alterar(@RequestBody Genero genero) {
+        generoRepository.save(genero);
+    }
+
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
     public void remover(@PathVariable Long id) {

@@ -34,6 +34,12 @@ public class LivroController {
         livroRepository.save(livro);
     }
 
+    @PutMapping("/")
+    @ResponseStatus(value = HttpStatus.OK)
+    public void alterar(@RequestBody Livro livro) {
+        livroRepository.save(livro);
+    }
+
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
     public void remover(@PathVariable Long id) {

@@ -34,6 +34,12 @@ public class EditoraController {
         editoraRepository.save(editora);
     }
 
+    @PutMapping("/")
+    @ResponseStatus(value = HttpStatus.OK)
+    public void alterar(@RequestBody Editora editora) {
+        editoraRepository.save(editora);
+    }
+
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
     public void remover(@PathVariable Long id) {
